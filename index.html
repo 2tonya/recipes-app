@@ -220,6 +220,14 @@
         margin-bottom: 4px;
       }
 
+      .video {
+        width: 100%;
+        display: block;
+        margin-top: 14px;
+        border-radius: 16px;
+        background: #000;
+      }
+
       footer {
         border-top: 1px solid var(--border);
         padding-top: 18px;
@@ -298,14 +306,11 @@
           <li>Откройте файл и разрешите установку из этого источника.</li>
           <li>Запустите «Рецепты» и добавьте первый рецепт.</li>
         </ol>
-        <p style="margin: 14px 0 0">
-          <a
-            href="https://github.com/2tonya/recipes-app/releases/download/v1.1.4/recipes-guide-1.1.4.mp4"
-            style="color: var(--primary); font-weight: 600; text-decoration: none"
-          >
-            Смотреть видео-гайд · 1,5 минуты
-          </a>
-        </p>
+        <video class="video" controls playsinline preload="metadata" poster="guide-poster.png">
+          <source src="recipes-guide-1.1.4.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает встроенное видео.
+        </video>
+        <p class="meta" style="text-align: left; margin: 8px 0 0">Видео-гайд · 1,5 минуты</p>
       </section>
 
       <div class="qr">
